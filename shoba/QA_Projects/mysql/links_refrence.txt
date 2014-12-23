@@ -1,0 +1,2 @@
+http://interactivepython.org/courselib/static/thinkcspy/toc.html - python class tutorial
+https://www.packtpub.com/books/content/python-data-persistence-using-mysql-part-iii-building-python-data-structures-upon-unde - pyhton dictionary for mysql-part-iii-building-python-data-structures-upon-unde
