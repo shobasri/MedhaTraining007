@@ -1,0 +1,12 @@
+CREATE DATABASE batch2;
+
+CREATE TABLE UserLogin (UserId varchar(20), Passwd varchar(20), PRIMARY KEY (UserId));
+INSERT INTO userlogin VALUES ('usr01','pwd01');
+SELECT * FROM userlogin;
+
+CREATE TABLE AcctDetails (acc_no varchar(20),userId varchar(20), PRIMARY KEY (acc_no),FOREIGN KEY (userId) REFERENCES UserLogin(UserId));
+INSERT INTO acctdetails VALUES (' acc01' ,'usr01');
+SELECT * FROM acctdetails;
+CREATE TABLE Transactions (transId varchar(20), trans_desc varchar(30), amount int(20) , tdate varchar(10), acc_no varchar(20), PRIMARY KEY (transId), FOREIGN KEY(acc_no) REFERENCES acctdetails(acc_no));
+INSERT INTO transactions VALUES ('t01','credit', '$50','2014-12-13','acc_no');
+SELECT * FROM Transactions;
